@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JuZslayy</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    
+<div class="wrapper">
+    <div class="payment">
+        <div id ="price">
+          <p></p>
+        </div>
+      <h2>Payment Gateway</h2>
+      <div class="form">
+        <div class="card space icon-relative">
+          <label class="label">Card holder:</label>
+          <input type="text" class="input" placeholder="Name on the card">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Card number:</label>
+          <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+          <i class="far fa-credit-card"></i>
+        </div>
+        <div class="card-grp space">
+          <div class="card-item icon-relative">
+            <label class="label">Expiry date:</label>
+            <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <div class="card-item icon-relative">
+            <label class="label">CVV:</label>
+            <input type="text" class="input" data-mask="000" placeholder="000">
+            <i class="fas fa-lock"></i>
+          </div>
+        </div>
+            <label class="label"><span>Supported cards:</span></label>
+            <div class="images">
+            <img src="/1200px-Rupay-Logo - Copy.png" alt="...">
+            <img src="/visa_PNG36.png" alt="...">
+            <img src="/images (1).png" alt="...">
+            <img src="/kisspng-paypal-logo-brand-font-payment-paypal-logo-icon-paypal-icon-logo-png-and-vecto-5b7f273e45e8a9.9067728615350597742864.png" alt="...">
+            
+        </div>
+          <button class="btn" id="pay"><p>Pay</p></button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="./src/data.js"></script>
+  <script src="./src/payment.js"></script>
+</body>
+</html>

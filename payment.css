@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Noto+Sans+Wancho&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  margin: 0 10px;
+}
+
+
+.payment{
+  background: #f8f8f8;
+  max-width: 500px;
+  height:max-content;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: relative;
+  transition: .7s;
+}
+.payment:hover{
+  transform:scale(1.1);
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+  font-family: 'DM Serif Text', serif
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+#price{
+  letter-spacing:2px;
+}
+#pay{
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  width:100%;
+  margin-top:5%;
+  border-radius:10px;
+  border: 2px solid #dddddd;
+  color:white;
+  font-family: 'Noto Sans Wancho', sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  font-size:18px;
+  transition: .7s;
+}
+#pay:hover{
+  transform:scale(1.1);
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+.images img{
+    width:18%;
+    
+}
+#price{
+  letter-spacing: 2px;
+}
+#pay{
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pay{
+    margin-top: 20px;
+  }
+  
+}
