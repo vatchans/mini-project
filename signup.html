@@ -49,6 +49,7 @@
         <span>Already have an account.click</span><a href="./signin.html">&nbsp;here</a>
     
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         async function createNewUsersData() {
         var username = document.getElementById("username").value
@@ -86,7 +87,22 @@
             console.log(res)
             console.log(username,email,password,phone)
             alert("you have successfully reigstered")
+            sendEmail()
             }
+            function sendEmail() {
+            var email = document.getElementById("email").value
+            var username = document.getElementById("username").value
+            Email.send({
+                SecureToken : "0563b21a-35fa-48bb-9709-11f0a1ad277e",
+                To: email,
+                From: "vatchans@gmail.com",
+                Subject: `Welcome to juzslayy`,
+                Body:`Hey ${username}, we are happy that your are here.
+                we are happy to accept your orders.keep shopping with us`
+            }).then(
+                message => alert(message)
+            );
+        }
         }
     </script>
 </body>
