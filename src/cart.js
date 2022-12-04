@@ -1,5 +1,6 @@
 let shop = document.getElementById("shop");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
+let likeditems=JSON.parse(localStorage.getItem("d")) || [];
 function generateShop() {
   return (shop.innerHTML =shopItemsData
     .map((x) => {
@@ -35,20 +36,18 @@ generateShop();
 
 let wishlist = (id) => {
   let selectedItem = id;
-  let search = basket.find((x) => x.id === selectedItem.id);
+  let search = likeditems.find((x) => x.id === selectedItem.id);
 
   if (search === undefined) {
-    basket.push({
+    likeditems.push({
       id: selectedItem.id,
       item: 1,
     });
-  } else {
-    search.item+=1;
   }
 
-  console.log(basket);
-  update(selectedItem.id);
-  localStorage.setItem("data", JSON.stringify(basket));
+  console.log(likeditems);
+  addwishlist(selectedItem.id);
+  localStorage.setItem("d", JSON.stringify(likeditems));
 };
 
 let increment = (id) => {
@@ -92,6 +91,10 @@ function update(id) {
   document.getElementById(id).innerHTML = search.item;
   calculation();
 }
+function addwishlist(id){
+  let search = likeditems.find((x) => x.id === id);
+  // document.getElementById(id).innerHTML = search.item;
+}
 
 
 
@@ -121,4 +124,3 @@ function search_products() {
 
   }
 }
-
