@@ -1,13 +1,11 @@
 let label = document.getElementById("label");
 let ShoppingCart = document.getElementById("shopping-cart");
-
-let basket = JSON.parse(localStorage.getItem("data")) || [];
-
+let likeditems= JSON.parse(localStorage.getItem("d")) || [];
 let generateCartItems = () => {
-  if (basket.length !== 0) {
-    return (ShoppingCart.innerHTML = basket
+  if (likeditems.length !== 0) {
+    return (ShoppingCart.innerHTML = likeditems
       .map((x) => {
-        let {id,} = x;
+        let { id } = x;
         let search = shopItemsData.find((y) => y.id === id) || [];
         return `
       <div class="cart-item">
