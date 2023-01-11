@@ -18,6 +18,8 @@ let generateCartItems = () => {
                 <p class="fa-solid fa-indian-rupee-sign">&nbsp;${search.price}</p>
                 </h4>
           </div>
+           <p>${search.desc}
+          </p>
         </div>
       </div>
       `;
