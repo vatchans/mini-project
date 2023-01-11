@@ -29,7 +29,7 @@ let generateCartItems = () => {
     <h2>There is no item on Wishlist</h2>
     </a>
     <div>
-    <img src="https://cdn1.iconfinder.com/data/icons/aami-web-internet/64/aami7-35-512.png">
+    <img src="/1062309-removebg-preview.png">
     <div>
     `;
   }
