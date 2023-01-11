@@ -30,7 +30,7 @@ let generateCartItems = () => {
     label.innerHTML = `
     <h2>There is no item on Wishlist</h2>
     </a>
-    <div>
+    <div  style='height:100vh;'>
     <img src="/1062309-removebg-preview.png">
     <div>
     `;
