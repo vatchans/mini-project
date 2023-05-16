@@ -1,7 +1,7 @@
 async function page() {
 var username = document.getElementById('username').value;
 var password = document.getElementById('password').value;
-let url = 'https://637db1519c2635df8f8c560f.mockapi.io/juzslay'
+let url = 'https://6350def93e9fa1244e4f259a.mockapi.io/juZslayy'
     let res = await fetch(url)
     let data = await res.json(url)  
     for(obj of data){
